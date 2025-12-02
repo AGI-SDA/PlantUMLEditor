@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using PlantUml.Net;
 
@@ -21,11 +21,12 @@ namespace PlantUMLEditor.Tests
 
             var str = File.ReadAllText(testData);
 
-            var doc = new TestDocument();
+         var doc = new TestDocument
+         {
+            GetText = () => str
+         };
 
-            doc.GetText = () => str;
-
-            await doc.ParseAsync();
+         await doc.ParseAsync();
 
             var expected = File.ReadAllText(testOutput).Trim();
             var result = doc.ParsedResult.Trim();

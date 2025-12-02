@@ -1,10 +1,9 @@
-﻿namespace PlantUMLEditor;
+namespace PlantUMLEditor;
 
-internal class Constants
+internal static class Constants
 {
     public const string LanguageName = "PlantUML";
-    public const string FileExtension = ".mdpuml";
-    public static bool IsTest = false;
+    public const string FileExtension = ".puml";
     public const string MarketplaceId = "VincentDagpin.PlantUMLEditor";
 
     public const string PackageUID = "8ae582d2-9916-49b1-9b79-1249bbd1734f";

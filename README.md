@@ -1,12 +1,11 @@
 An editor for PlantUML https://plantuml.com/
 
-Supported file extension: **.mdpuml**
+Supported file extension: **.puml**
 
 Features
 - Markdown render (using [Markdig](https://github.com/xoofx/markdig))
 - PlantUML diagram render
 - Render modes (Local and Remote) - Default to Remote
-- You can build your own remote, clone https://github.com/vgdagpin/PlantUMLServer and deploy to your server
 
 You can change the option in Tools > Options > Text Editor > PlantUML > Advance
 
@@ -42,4 +41,3 @@ database    Db2
 
 --
 the lazy
-```
