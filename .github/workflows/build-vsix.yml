@@ -42,5 +42,3 @@ jobs:
        with:
          name: vsix
          path: vsix
-     #    & $VsixPublisher publish -payload vsix/PlantUMLEditor/bin/Release/PlantUMLEditor.vsix -publishManifest publish-manifest.json
-     #   shell: pwsh
